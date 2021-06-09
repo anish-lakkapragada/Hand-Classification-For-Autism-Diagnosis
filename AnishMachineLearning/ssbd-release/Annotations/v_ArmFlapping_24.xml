@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_ArmFlapping_24" keyword="Stimming Autistic Boy">  
+   <url>http://www.youtube.com/watch?v=AGmXuSY4gx0</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>1034</frames>
+   <persons>1</persons>  
+   <duration>41s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0008:0015</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>   
+</video>

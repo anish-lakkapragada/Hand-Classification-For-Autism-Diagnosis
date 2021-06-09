@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_HeadBanging_02" keyword="3 Year Old Headbanging">  
+   <url>http://www.youtube.com/watch?v=a5BuwkqtIa0</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>1693</frames>
+   <persons>1</persons>  
+   <duration>57s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="2" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0004:0009</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_02">		
+         <time>0036:0044</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+   </behaviours>   
+</video>

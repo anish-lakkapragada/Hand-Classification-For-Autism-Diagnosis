@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_23" keyword="My Son Spinning - AUTISM">  
+   <url>http://www.youtube.com/watch?v=yiEo7Kg1ngY</url>
+   <height>240</height>
+   <width>320</width>
+   <frames>2357</frames>
+   <persons>1</persons>  
+   <duration>158s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0001:0235</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>

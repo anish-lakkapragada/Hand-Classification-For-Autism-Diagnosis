@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_11" keyword="Baby with autism spinning to twinkle twlinkle">   
+   <url>http://www.youtube.com/watch?v=VAMZwnfAHyY</url>
+   <height>360</height>  
+   <width>640</width>   
+   <frames>505</frames> 
+   <persons>2</persons>   
+   <duration>34s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">     
+      <behaviour id="b_01">         
+         <time>0003-0020</time>         
+         <bodypart>body</bodypart>         
+         <category>spinning</category>         
+         <intensity>low</intensity>         
+         <modality>video</modality>      
+      </behaviour>   
+   </behaviours>  
+</video>

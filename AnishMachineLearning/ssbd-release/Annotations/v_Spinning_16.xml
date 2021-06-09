@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_16" keyword="Early Signs of autism- spinning and teeth grinding">  
+   <url>http://www.youtube.com/watch?v=NDcUGYlTy_4</url>
+   <height>480</height>
+   <width>360</width>
+   <frames>2024</frames>
+   <persons>1</persons>  
+   <duration>127s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="2" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0006:0012</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_02">		
+         <time>0115:0135</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour> 
+   </behaviours>
+</video>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_21" keyword="little Boy with Autism spinning in circles untill dizzy and trying to sing">  
+   <url>http://www.youtube.com/watch?v=kFuxwAufWvQ</url>
+   <height>360</height>
+   <width>640</width>
+   <frames>1904</frames>
+   <persons>1</persons>  
+   <duration>127s</duration>  
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0002:0047</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>

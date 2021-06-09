@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_18" keyword="Jake doing multiple things arm swinging head rocking yelling making sounds like ah ah ah and la la la">  
+   <url>http://www.youtube.com/watch?v=scM9g0LExJA</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>8836</frames>
+   <persons>1</persons>  
+   <duration>295</duration>
+   <conversation>no</conversation>
+   <behaviours count="5" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0001:0047</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_02">		
+         <time>0100:0128</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_03">		
+         <time>0145:0208</time>		
+         <bodypart>head</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_04">		
+         <time>0220:0227</time>		
+         <bodypart>head</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_05">		
+         <time>0243:0455</time>		
+         <bodypart>head</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+   </behaviours>
+</video>

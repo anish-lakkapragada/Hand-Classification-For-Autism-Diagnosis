@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_24" keyword="Autistic behaviors - son rolling/spinning in grass">  
+   <url>http://www.youtube.com/watch?v=-rC-ab0nzxY</url>
+   <height>288</height>
+   <width>352</width>
+   <frames>1435</frames>
+   <persons>1</persons>  
+   <duration>47s</duration>  
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0026:0043</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>
