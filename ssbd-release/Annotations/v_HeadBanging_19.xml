@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_HeadBanging_19" keyword="Just two little autistic kids">  
+   <url>http://www.youtube.com/watch?v=I38WtUMuQwM</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>7290</frames>
+   <persons>5</persons>  
+   <duration>243s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="4" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0030:0040</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour> 
+	  <behaviour id="b_02">		
+         <time>0204:0230</time>		
+         <bodypart>arm</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_03">		
+         <time>0256:0307</time>		
+         <bodypart>arm</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_04">		
+         <time>0326:0331</time>		
+         <bodypart>arm</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+   </behaviours>
+</video>

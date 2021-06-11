@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_HeadBanging_11" keyword="Emerson Upset, Bangs Head on Floor">  
+   <url>http://www.youtube.com/watch?v=Pa-pdBF4FFA</url>
+   <height>360</height>
+   <width>640</width>
+   <frames>2280</frames>
+   <persons>3</persons>  
+   <duration>76s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0036:0039</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>

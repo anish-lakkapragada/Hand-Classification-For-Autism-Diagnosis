@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_ArmFlapping_19" keyword="Jacob rocking on daddy's lap, also arm flapping!!">  
+   <url>http://www.youtube.com/watch?v=1vRklwIBC28</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>7806</frames>
+   <persons>2</persons>  
+   <duration>261s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="4" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0100:0134</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_02">		
+         <time>0140:0200</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+      <behaviour id="b_03">		
+         <time>0255:0310</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_04">		
+         <time>0325:0339</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+   </behaviours>
+</video>

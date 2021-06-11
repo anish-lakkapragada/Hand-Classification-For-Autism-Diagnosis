@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_HeadBanging_23" keyword="Retarded kid head banging">  
+   <url>http://www.youtube.com/watch?v=w96PxUcoo58</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>392</frames>
+   <persons>2</persons>  
+   <duration>14s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0005:0010</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>

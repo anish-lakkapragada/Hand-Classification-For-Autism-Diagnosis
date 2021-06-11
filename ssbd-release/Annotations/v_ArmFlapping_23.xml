@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_ArmFlapping_23" keyword="stimming Hand flapping walking in circles and spinning sensory integration disorder">  
+   <url>http://www.youtube.com/watch?v=xeKKMkVgNPU</url>  
+   <height>360</height>
+   <width>540</width>
+   <frames>2205</frames>
+   <persons>1</persons>  
+   <duration>107s</duration>
+   <conversation>no</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0003:0009</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+      <behaviour id="b_02">		
+         <time>0049:0057</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+	  <behaviour id="b_03">		
+         <time>0100:0110</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>
+   </behaviours>
+</video>

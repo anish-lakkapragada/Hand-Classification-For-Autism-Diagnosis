@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_HeadBanging_06" keyword="Anthony Head Banging">  
+   <url>http://www.youtube.com/watch?v=WLtorzPESbc</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>691</frames>
+   <persons>2</persons>  
+   <duration>23s</duration>
+   <conversation>no</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0010:0019</time>		
+         <bodypart>head</bodypart>		
+         <category>headbanging</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>

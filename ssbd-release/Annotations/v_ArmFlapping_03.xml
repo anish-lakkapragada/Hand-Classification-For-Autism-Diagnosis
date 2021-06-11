@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_ArmFlapping_03" keyword="Arm Flapping">  
+   <url>http://www.youtube.com/watch?v=Z2kfvB4lv7A</url>  
+   <height>360</height>
+   <width>480</width>
+   <frames>1857</frames>
+   <persons>2</persons>  
+   <duration>62s</duration>
+   <conversation>yes</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>22:27</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>   
+</video>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_ArmFlapping_16" keyword="Head bangin">  
+   <url>http://www.youtube.com/watch?v=5sgfS0SSh8o</url>  
+   <height>360</height>
+   <width>202</width>
+   <frames>1604</frames>
+   <persons>1</persons>  
+   <duration>54</duration>
+   <conversation>no</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0032:0046</time>		
+         <bodypart>hand</bodypart>		
+         <category>armflapping</category>		
+         <intensity>high</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>

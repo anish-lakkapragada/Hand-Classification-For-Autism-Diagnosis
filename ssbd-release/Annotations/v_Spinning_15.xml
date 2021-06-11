@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<video id="v_Spinning_15" keyword="Early signs of autism  stimming">  
+   <url>http://www.youtube.com/watch?v=gKED6S0eGYA</url>
+   <height>360</height>
+   <width>480</width>
+   <frames>754</frames>
+   <persons>1</persons>  
+   <duration>26s</duration>
+   <conversation>no</conversation>
+   <behaviours count="1" id="b_Set_01">	
+      <behaviour id="b_01">		
+         <time>0001:0010</time>		
+         <bodypart>body</bodypart>		
+         <category>spinning</category>		
+         <intensity>low</intensity>		
+         <modality>video</modality>	
+      </behaviour>  
+   </behaviours>
+</video>
