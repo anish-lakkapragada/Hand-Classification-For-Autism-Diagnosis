@@ -1,4 +1,1 @@
-all code here for my internship. 
-
-thanks 
-- Anish Lakkapragada 
+all code here for my internship; thank you!
