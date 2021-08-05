@@ -2,7 +2,5 @@
     display:inline-table
 }
 
-
-th {
-            white-space: nowrap;
-         }
+table {table-layout:fixed}
+td {overflow:hidden; white-space:nowrap}
