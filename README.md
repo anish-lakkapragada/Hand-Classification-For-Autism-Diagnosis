@@ -44,6 +44,60 @@ We found that the best results on our recorded videos and on our dataset came fr
 |-------------------------|-------------|-------------|-------------|-------------|
 | 71.9 ± 1.7              | 70.8 ± 1.85 | 74.5 ± 4.04 | 71.9 ± 2.25 | 0.77 ± 0.03 |
 
+<details>
+    <summary> All Results </summary>
+    <table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Classification Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1 Score</th>
+<th>AUROC</th>
+<th>Video Performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All Landmarks</td>
+<td>72.4 ± 0.8</td>
+<td>69.68 ± 0.99</td>
+<td>82.92 ± 0.94</td>
+<td>75.15 ± 0.57</td>
+<td>0.75 ± 0.02</td>
+<td>🤮</td>
+</tr>
+<tr>
+<td>Mean Landmark</td>
+<td>69.8 ± 4.04</td>
+<td>69.18 ± 5.05</td>
+<td>69.78 ± 6.56</td>
+<td>67.86 ± 3.52</td>
+<td>0.75 ± 0.02</td>
+<td>😐</td>
+</tr>
+<tr>
+<td>One Landmark</td>
+<td>73.9 ± 2.77</td>
+<td>75.29 ± 1.72</td>
+<td>73.1 ± 5.09</td>
+<td>72.6 ± 2.30</td>
+<td>0.77 ± 0.02</td>
+<td>👍</td>
+</tr>
+<tr>
+<td>Six Landmark</td>
+<td>71.9 ± 1.7</td>
+<td>70.8 ± 1.85</td>
+<td>74.5 ± 4.04</td>
+<td>71.9 ± 2.25</td>
+<td>0.77 ± 0.03</td>
+<td>🔥</td>
+</tr>
+</tbody>
+</table>
+</details>
 ## Code 
 
 
