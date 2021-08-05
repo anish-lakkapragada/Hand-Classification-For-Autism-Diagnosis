@@ -9,3 +9,5 @@ th {
 tr {
     display: inline-table; 
 }
+
+.hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
