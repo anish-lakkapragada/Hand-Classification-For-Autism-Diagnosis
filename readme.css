@@ -2,8 +2,7 @@
     display:inline-table
 }
 
-td, th {
-  white-space: nowrap;
-  overflow: hidden;
-}
 
+th {
+            white-space: nowrap;
+         }
