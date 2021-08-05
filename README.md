@@ -103,3 +103,20 @@
       </tbody>
    </table>
 </details>
+<h2 id="code">Code</h2>
+<p> 
+
+Here we would like to describe the source code we used for our project. 
+
+For the four approaches we tried (all landmarks, one landmark, six landmarks, and mean landmark):
+- <code> all_landmark_detection.ipynb </code> contains the code for the all landmarks approach  
+- <code> mean_landmark_detection.ipynb </code> contains the code for the mean landmark approach 
+- <code> one_landmark_detection.ipynb </code> contains the code for the one landmark approach
+- <code> six_landmark_detection.ipynb </code> contains the code for the six landmarks approach 
+
+To avoid having to read the frames of each video every time we wanted to run these approaches, we stored the location frames of each video for each approach into 5 pickle files (for 5-fold cross validation) in the <code> all_points_folds </code>, 
+<code> mean_point_folds </code>, <code> one_point_folds </code>, and <code> six_point_folds </code> directories. The <code> create_folds.ipynb </code> file contains the code for creating these pickle files.
+
+The <code> ensemble_code </code> folder contains the notebooks in which we tried to use ensemble methods. This code is not guaranteed to work, but if you want to check it out it is there. 
+
+</p>
