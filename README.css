@@ -1,7 +1,11 @@
+table {
+    display: inline-table;
+}
+
 th {
-    display: inline-block;
+    display: inline-table;
 }
 
 tr {
-    display: inline-block; 
+    display: inline-table; 
 }
