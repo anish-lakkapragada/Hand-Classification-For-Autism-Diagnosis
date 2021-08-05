@@ -32,10 +32,20 @@ The above image shows the 21 landmarks that Mediapipe, a landmark detection fram
 
 <img src = "docs/Approach.png">
 
-It is easy to see that this kind of feature representation and model architecture would easily fit into a model device even unoptimized. Our most heavy model uses <50,000 parameters. 
+It is easy to see that this kind of feature representation and model architecture would easily fit into a model device even unoptimized. Our heaviest model uses <50,000 parameters. 
 
+## Approaches
 
 ## Results
+
+We found that the best results on our recorded videos and on our dataset came from using the six landmarks approach. This approach almost always predicted correctly on our self-recorded videos and got a good, consistent accuracy on our dataset. It's (validation) accuracy, precision, recall, F1 Score, and AUROC over 10 runs are shown below.
+
+| Accuracy | Precision   | Recall      | F1 Score    | AUROC       |
+|-------------------------|-------------|-------------|-------------|-------------|
+| 71.9 ± 1.7              | 70.8 ± 1.85 | 74.5 ± 4.04 | 71.9 ± 2.25 | 0.77 ± 0.03 |
+
+## Code 
+
 
 ## Citation 
 
