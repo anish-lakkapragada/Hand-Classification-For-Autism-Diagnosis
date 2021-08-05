@@ -1,8 +1,4 @@
-
-<style>
-   .hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
-</style>
-
+<link rel = "stylesheet" type="readme.css">
 <h1 id="activity-recognition-for-autism-detection">Activity Recognition for Autism Detection</h1>
 <p>Code for <strong>Activity Recognition for Autism Detection</strong>.</p>
 <p><strong><a href="mailto:anish.lakkapragada@gmail.com,peter100@stanford.edu,dpwall@stanford.edu">Authors</a></strong>: <a href="mailto:anish.lakkapragada@gmail.com">Anish Lakkapragada</a>, <a href="mailto:peter100@stanford.edu">Peter Washington</a>, <a href="mailto:dpwall@stanford.edu">Dennis P. Wall</a></p>
@@ -84,6 +80,7 @@
             <td>😐</td>
          </tr>
          <tr>
+            <span>
             <td>One Landmark</td>
             <td>73.9 ± 2.77</td>
             <td>75.29 ± 1.72</td>
@@ -91,6 +88,7 @@
             <td>72.6 ± 2.30</td>
             <td>0.77 ± 0.02</td>
             <td>👍</td>
+            </span>
          </tr>
          <tr>
             <td>Six Landmark</td>
