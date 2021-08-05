@@ -49,7 +49,7 @@
 <details>
    <summary> All Results </summary>
    <p> If you are interested, we show the results of all the approaches we tried (trained without augmentation) below. </p>
-   <table class = "hideextra" style=display.inline-table>
+   <table>
       <thead>
          <tr>
             <th>Approach</th>
