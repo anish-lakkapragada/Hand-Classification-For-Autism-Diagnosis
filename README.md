@@ -1,9 +1,3 @@
-<html> 
-<head>
-<style>
-   .hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
-</style>
-</head>
 <link rel = "stylesheet" type="readme.css">
 <h1 id="activity-recognition-for-autism-detection">Activity Recognition for Autism Detection</h1>
 <p>Code for <strong>Activity Recognition for Autism Detection</strong>.</p>
@@ -109,4 +103,3 @@
       </tbody>
    </table>
 </details>
-</html>
