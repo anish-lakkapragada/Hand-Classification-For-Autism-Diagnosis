@@ -72,7 +72,7 @@
             <td>🤮</td>
          </tr>
          <tr>
-            <td>Mean Landmark</td>
+            <td>  Mean Landmark  </td>
             <td>69.8 ± 4.04</td>
             <td>69.18 ± 5.05</td>
             <td>69.78 ± 6.56</td>
@@ -82,7 +82,7 @@
          </tr>
          <tr>
             <span>
-            <td>One Landmark</td>
+            <td>  One Landmark  </td>
             <td>73.9 ± 2.77</td>
             <td>75.29 ± 1.72</td>
             <td>73.1 ± 5.09</td>
@@ -92,7 +92,7 @@
             </span>
          </tr>
          <tr>
-            <td>Six Landmark</td>
+            <td>  Six Landmark  </td>
             <td>71.9 ± 1.7</td>
             <td>70.8 ± 1.85</td>
             <td>74.5 ± 4.04</td>
@@ -109,13 +109,14 @@
 Here we would like to describe the source code we used for our project. 
 
 For the four approaches we tried (all landmarks, one landmark, six landmarks, and mean landmark):
-- <code> all_landmark_detection.ipynb </code> contains the code for the all landmarks approach  
-- <code> mean_landmark_detection.ipynb </code> contains the code for the mean landmark approach 
-- <code> one_landmark_detection.ipynb </code> contains the code for the one landmark approach
-- <code> six_landmark_detection.ipynb </code> contains the code for the six landmarks approach 
+- <code>all_landmark_detection.ipynb</code> contains the code for the all landmarks approach  
+- <code>mean_landmark_detection.ipynb</code> contains the code for the mean landmark approach 
+- <code>one_landmark_detection.ipynb</code> contains the code for the one landmark approach
+- <code>six_landmark_detection.ipynb</code> contains the code for the six landmarks approach 
 
 To avoid having to read the frames of each video every time we wanted to run these approaches, we stored the location frames of each video for each approach into 5 pickle files (for 5-fold cross validation) in the <code> all_points_folds </code>, 
-<code> mean_point_folds </code>, <code> one_point_folds </code>, and <code> six_point_folds </code> directories. The <code> create_folds.ipynb </code> file contains the code for creating these pickle files.
+<code>mean_point_folds</code>, <code>one_point_folds</code>, and <code>six_point_folds</code> directories. These files are used in
+the <code>all_landmark_detection.ipynb</code>, <code>mean_landmark_detection.ipynb</code>, <code>one_landmark_detection.ipynb</code>, and <code>six_landmark_detection.ipynb</code> notebooks for cross-validation.
 
 The <code> ensemble_code </code> folder contains the notebooks in which we tried to use ensemble methods. This code is not guaranteed to work, but if you want to check it out it is there. 
 
