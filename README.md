@@ -55,10 +55,10 @@
       <thead>
          <tr>
             <th>Approach</th>
-            <th>Classification Accuracy</th>
+            <th>Accuracy</th>
             <th>Precision</th>
             <th>Recall</th>
-            <th>F1 Score</th>
+            <th>F1</th>
             <th>AUROC</th>
             <th>Video Performance</th>
          </tr>
