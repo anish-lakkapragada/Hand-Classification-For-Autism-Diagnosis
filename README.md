@@ -1,5 +1,9 @@
-<link rel = "stylesheet" type="readme.css"> 
-<h1 id="activity-recognition-for-autism-detection">Activity Recognition for Autism Detection</h1>
+# Activity Recognition for Autism Diagnosis
+
+<style>
+   table {table-layout:fixed}
+   td {overflow:hidden; white-space:nowrap}
+</style>
 <p>Code for <strong>Activity Recognition for Autism Detection</strong>.</p>
 <p><strong><a href="mailto:anish.lakkapragada@gmail.com,peter100@stanford.edu,dpwall@stanford.edu">Authors</a></strong>: <a href="mailto:anish.lakkapragada@gmail.com">Anish Lakkapragada</a>, <a href="mailto:peter100@stanford.edu">Peter Washington</a>, <a href="mailto:dpwall@stanford.edu">Dennis P. Wall</a></p>
 <details>
