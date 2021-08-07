@@ -38,11 +38,11 @@
    </thead>
    <tbody>
       <tr>
-         <td>71.9 ± 1.7</td>
-         <td>70.8 ± 1.85</td>
-         <td>74.5 ± 4.04</td>
-         <td>71.9 ± 2.25</td>
-         <td>0.77 ± 0.03</td>
+         <td><div class = "hide"> 71.9 ± 1.7</div></td>
+         <td><div class = "hide"> 70.8 ± 1.85</div></td>
+         <td><div class = "hide"> 74.5 ± 4.04</div></td>
+         <td><div class = "hide"> 71.9 ± 2.25</div></td>
+         <td><div class = "hide"> 0.77 ± 0.03</div></td>
       </tr>
    </tbody>
 </table>
@@ -63,42 +63,42 @@
       </thead>
       <tbody>
          <tr>
-            <td>All Landmarks</td>
-            <td>72.4 ± 0.8</td>
-            <td>69.68 ± 0.99</td>
-            <td>82.92 ± 0.94</td>
-            <td>75.15 ± 0.57</td>
-            <td>0.75 ± 0.02</td>
-            <td>🤮</td>
+            <td><div class = "hide"> All Landmarks</div></td>
+            <td><div class = "hide"> 72.4 ± 0.8</div></td>
+            <td><div class = "hide"> 69.68 ± 0.99</div></td>
+            <td><div class = "hide"> 82.92 ± 0.94</div></td>
+            <td><div class = "hide"> 75.15 ± 0.57</div></td>
+            <td><div class = "hide"> 0.75 ± 0.02</div></td>
+            <td><div class = "hide"> 🤮</div></td>
          </tr>
          <tr>
-            <td>  Mean Landmark  </td>
-            <td>69.8 ± 4.04</td>
-            <td>69.18 ± 5.05</td>
-            <td>69.78 ± 6.56</td>
-            <td>67.86 ± 3.52</td>
-            <td>0.75 ± 0.02</td>
-            <td>😐</td>
+            <td><div class = "hide">   Mean Landmark  </div></td>
+            <td><div class = "hide"> 69.8 ± 4.04</div></td>
+            <td><div class = "hide"> 69.18 ± 5.05</div></td>
+            <td><div class = "hide"> 69.78 ± 6.56</div></td>
+            <td><div class = "hide"> 67.86 ± 3.52</div></td>
+            <td><div class = "hide"> 0.75 ± 0.02</div></td>
+            <td><div class = "hide"> 😐</div></td>
          </tr>
          <tr>
             <span>
-            <td>  One Landmark  </td>
-            <td>73.9 ± 2.77</td>
-            <td>75.29 ± 1.72</td>
-            <td>73.1 ± 5.09</td>
-            <td>72.6 ± 2.30</td>
-            <td>0.77 ± 0.02</td>
-            <td>👍</td>
+            <td><div class = "hide">   One Landmark  </div></td>
+            <td><div class = "hide"> 73.9 ± 2.77</div></td>
+            <td><div class = "hide"> 75.29 ± 1.72</div></td>
+            <td><div class = "hide"> 73.1 ± 5.09</div></td>
+            <td><div class = "hide"> 72.6 ± 2.30</div></td>
+            <td><div class = "hide"> 0.77 ± 0.02</div></td>
+            <td><div class = "hide"> 👍</div></td>
             </span>
          </tr>
          <tr>
-            <td>  Six Landmark  </td>
-            <td>71.9 ± 1.7</td>
-            <td>70.8 ± 1.85</td>
-            <td>74.5 ± 4.04</td>
-            <td>71.9 ± 2.25</td>
-            <td>0.77 ± 0.03</td>
-            <td>🔥</td>
+            <td><div class = "hide">   Six Landmark  </div></td>
+            <td><div class = "hide"> 71.9 ± 1.7</div></td>
+            <td><div class = "hide"> 70.8 ± 1.85</div></td>
+            <td><div class = "hide"> 74.5 ± 4.04</div></td>
+            <td><div class = "hide"> 71.9 ± 2.25</div></td>
+            <td><div class = "hide"> 0.77 ± 0.03</div></td>
+            <td><div class = "hide"> 🔥</div></td>
          </tr>
       </tbody>
    </table>
