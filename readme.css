@@ -1,1 +1,3 @@
-.hideextra { white-space: nowrap; overflow: nowrap;}
+* {
+    display: inline-table; 
+}
