@@ -67,17 +67,17 @@
          <tr>
             <td style = "position:absolute"><div class = "hide"> All</div></td>
             <td style = "position:absolute"><div class = "hide"> 72.4 ± 0.8</div></td>
-            <td style = "position:absolute"><div class = "hide"> 69.68 ± 0.99</div></td>
-            <td style = "position:absolute"><div class = "hide"> 82.92 ± 0.94</div></td>
+            <td style = "position:absolute"><div class = "hide">69.7 ± 0.99</div></td>
+            <td style = "position:absolute"><div class = "hide">82.9 ± 0.94</div></td>
             <td style = "position:absolute"><div class = "hide"> 75.15 ± 0.57</div></td>
             <td style = "position:absolute"><div class = "hide"> 0.75 ± 0.02</div></td>
             <td style = "position:absolute"><div class = "hide"> 🤮</div></td>
          </tr>
          <tr>
             <td style = "position:absolute"><div class = "hide">Mean</div></td>
-            <td style = "position:absolute"><div class = "hide"> 69.8 ± 4.04</div></td>
+            <td style = "position:absolute"><div class = "hide">69.8 ± 4.04</div></td>
             <td style = "position:absolute"><div class = "hide"> 69.18 ± 5.05</div></td>
-            <td style = "position:absolute"><div class = "hide"> 69.78 ± 6.56</div></td>
+            <td style = "position:absolute"><div class = "hide">69.8 ± 6.56</div></td>
             <td style = "position:absolute"><div class = "hide"> 67.86 ± 3.52</div></td>
             <td style = "position:absolute"><div class = "hide"> 0.75 ± 0.02</div></td>
             <td style = "position:absolute"><div class = "hide"> 😐</div></td>
