@@ -65,7 +65,7 @@
       </thead>
       <tbody>
          <tr>
-            <td style = "position:absolute"><div class = "hide"> All</div></td>
+            <td style = "position:absolute"><div class = "hide"> All Landmarks</div></td>
             <td style = "position:absolute"><div class = "hide"> 72.4 ± 0.8</div></td>
             <td style = "position:absolute"><div class = "hide">69.7 ± 0.99</div></td>
             <td style = "position:absolute"><div class = "hide">82.9 ± 0.94</div></td>
@@ -74,7 +74,7 @@
             <td style = "position:absolute"><div class = "hide"> 🤮</div></td>
          </tr>
          <tr>
-            <td style = "position:absolute"><div class = "hide">Mean</div></td>
+            <td style = "position:absolute"><div class = "hide">Mean Landmarks</div></td>
             <td style = "position:absolute"><div class = "hide">69.8 ± 4.04</div></td>
             <td style = "position:absolute"><div class = "hide"> 69.18 ± 5.05</div></td>
             <td style = "position:absolute"><div class = "hide">69.8 ± 6.56</div></td>
@@ -84,7 +84,7 @@
          </tr>
          <tr>
             <span>
-            <td style = "position:absolute"><div class = "hide"> One</div></td>
+            <td style = "position:absolute"><div class = "hide"> One Landmarks</div></td>
             <td style = "position:absolute"><div class = "hide"> 73.9 ± 2.77</div></td>
             <td style = "position:absolute"><div class = "hide"> 75.29 ± 1.72</div></td>
             <td style = "position:absolute"><div class = "hide"> 73.1 ± 5.09</div></td>
@@ -94,7 +94,7 @@
             </span>
          </tr>
          <tr>
-            <td style = "position:absolute"><div class = "hide">Six</div></td>
+            <td style = "position:absolute"><div class = "hide">Six Landmarks</div></td>
             <td style = "position:absolute"><div class = "hide"> 71.9 ± 1.7</div></td>
             <td style = "position:absolute"><div class = "hide"> 70.8 ± 1.85</div></td>
             <td style = "position:absolute"><div class = "hide"> 74.5 ± 4.04</div></td>
