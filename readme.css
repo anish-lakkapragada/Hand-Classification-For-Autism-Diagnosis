@@ -1,3 +1,2 @@
-* {
-    display:inline-table
-}
+table { display: inline; }
+tr { display: inline-table; }

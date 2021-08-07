@@ -118,6 +118,6 @@ To avoid having to read the frames of each video every time we wanted to run the
 <code>mean_point_folds</code>, <code>one_point_folds</code>, and <code>six_point_folds</code> directories. These files are used in
 the <code>all_landmark_detection.ipynb</code>, <code>mean_landmark_detection.ipynb</code>, <code>one_landmark_detection.ipynb</code>, and <code>six_landmark_detection.ipynb</code> notebooks for cross-validation.
 
-The <code> ensemble_code </code> folder contains the notebooks in which we tried to use ensemble methods. This code is not guaranteed to work, but if you want to check it out it is there. 
+The <code>ensemble_code</code> folder contains the notebooks in which we tried to use ensemble methods. This code is not guaranteed to work, but if you want to check it out it is there. 
 
 </p>
