@@ -1,1 +1,1 @@
-.hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
+.hideextra { white-space: nowrap; overflow: nowrap;}
