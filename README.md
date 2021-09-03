@@ -123,3 +123,16 @@ the <code>all_landmark_detection.ipynb</code>, <code>mean_landmark_detection.ipy
 The <code>ensemble_code</code> folder contains the notebooks in which we tried to use ensemble methods. This code is not guaranteed to work, but if you want to check it out it is there. 
 
 </p>
+
+## Citations
+Please cite the following:
+```
+@InProceedings{Nishi_2021_CVPR,
+    author    = {Nishi, Kento and Ding, Yi and Rich, Alex and {H{\"o}llerer, Tobias},
+    title     = {Augmentation Strategies for Learning With Noisy Labels},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {8022-8031}
+}
+```

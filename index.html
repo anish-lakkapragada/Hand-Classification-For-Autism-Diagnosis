@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Activity Recognition for Autism Diagnosis">
+    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activity Recognition for Autism Diagnosis</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+
+
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://keunhong.com">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title"> Activity Recognition for Autism Diagnosis</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://keunhong.com">Anish Lakkapragada</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://utkarshsinha.com">Peter Washington</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://jonbarron.info">Dennis P. Wall</a><sup>2</sup>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Lynbrook High School</span>
+                            <span class="author-block"><sup>2</sup>Stanford University</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. 
+                                <span class="link-block">
+                                    <a href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span> --> 
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2108.07917"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. 
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span> --> 
+                                <!-- Code Link. -->
+
+                                <span class="link-block">
+                                    <a href="https://github.com/anish-lakkapragada/ActivRecognition-Autism-Diagnosis"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video id="teaser" autoplay muted loop height="100%">
+                    <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/teaser.mp4" type="video/mp4">
+                </video>
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+                    free-viewpoint
+                    portraits.
+                </h2>
+            </div>
+        </div>
+    </section>--> 
+
+    <!--
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/steve.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-chair-tp">
+                        <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/chair-tp.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-shiba">
+                        <video poster="" id="shiba" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/shiba.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-fullbody">
+                        <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/fullbody.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-blueshirt">
+                        <video poster="" id="blueshirt" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/blueshirt.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-mask">
+                        <video poster="" id="mask" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/mask.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-coffee">
+                        <video poster="" id="coffee" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/coffee.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-toby">
+                        <video poster="" id="toby" autoplay controls muted loop height="100%">
+                            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/toby2.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+--> 
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified"> 
+                        <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait months orlonger before
+                                receiving a diagnosis for their child. One approach to lessen delays is the use digitaltechnologies to detect
+                                the presence of behaviors indicative of autism, which in aggregate may leadto remote and automated diagnostics.
+                                One of the strongest indicators of autism is stimming, whichincludes repetitive, self-stimulatory behaviors such
+                                as hand flapping, headbanging, and spinning.Using computer vision to detect hand flapping is especially
+                                difficult due to the sparsity of publictraining data in this space and excessive shakiness and motion in such
+                                data. Our work demonstratesa novel method that may overcome these issues: we use hand landmark detection over
+                                time as afeature representation which is then fed into a Long Short-Term Memory (LSTM) model. We achieve
+                                avalidation accuracy and F1 Score of about 72% on detecting whether videos from the Self-StimulatoryBehaviour
+                                Dataset (SSBD) contain hand flapping or not. Our best model also predicts accurately onexternal videos we
+                                recorded of ourselves outside of the dataset it was trained on. This model usesless than 26,000 parameters,
+                                providing promise for fast deployment into ubiquitous and wearabledigital settings for a remote autism
+                                diagnosis. </em> </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. 
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        --> 
+
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop"></div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{park2021nerfies
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            This means you are free to borrow the <a
+                                href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+                            we just ask that you link back to this page in the footer.
+                            Please remember to remove the analytics code included in the header of the website which
+                            you do not want on your website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
