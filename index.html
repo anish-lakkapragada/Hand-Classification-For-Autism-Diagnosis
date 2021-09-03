@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description"
-        content="Activity Recognition for Autism Diagnosis">
-    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="description" content="Activity Recognition for Autism Diagnosis">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Activity Recognition for Autism Diagnosis</title>
 
@@ -43,28 +41,6 @@
 </head>
 
 <body>
-
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-                <a class="navbar-item" href="https://keunhong.com">
-                    <span class="icon">
-                        <i class="fas fa-home"></i>
-                    </span>
-                </a>
-            </div>
-
-        </div>
-    </nav>
-
-
     <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop">
@@ -73,17 +49,20 @@
                         <h1 class="title is-1 publication-title"> Activity Recognition for Autism Diagnosis</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a href="https://keunhong.com">Anish Lakkapragada</a><sup>1</sup>,</span>
+                                <a href="https://wall-lab.stanford.edu/people/interns/anishl/">Anish
+                                    Lakkapragada</a><sup>1</sup>,</span>
                             <span class="author-block">
-                                <a href="https://utkarshsinha.com">Peter Washington</a><sup>2</sup>,</span>
+                                <a href="https://wall-lab.stanford.edu/people/current/peter/">Peter
+                                    Washington</a><sup>2</sup>,</span>
                             <span class="author-block">
-                                <a href="https://jonbarron.info">Dennis P. Wall</a><sup>2</sup>,
+                                <a href="https://wall-lab.stanford.edu/people/current/dennis/">Dennis P.
+                                    Wall</a><sup>2</sup>,
                             </span>
                         </div>
 
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block"><sup>1</sup>Lynbrook High School</span>
-                            <span class="author-block"><sup>2</sup>Stanford University</span>
+                            <span class="author-block">Lynbrook High School<sup>1</sup></span>
+                            <span class="author-block">Stanford University<sup>2</sup></span>
                         </div>
 
                         <div class="column has-text-centered">
@@ -97,7 +76,7 @@
                                         </span>
                                         <span>Paper</span>
                                     </a>
-                                </span> --> 
+                                </span> -->
                                 <span class="link-block">
                                     <a href="https://arxiv.org/abs/2108.07917"
                                         class="external-link button is-normal is-rounded is-dark">
@@ -116,7 +95,7 @@
                                         </span>
                                         <span>Video</span>
                                     </a>
-                                </span> --> 
+                                </span> -->
                                 <!-- Code Link. -->
 
                                 <span class="link-block">
@@ -151,7 +130,7 @@
                 </h2>
             </div>
         </div>
-    </section>--> 
+    </section>-->
 
     <!--
     <section class="hero is-light is-small">
@@ -210,99 +189,121 @@
             </div>
         </div>
     </section>
---> 
+-->
 
     <section class="section">
         <div class="container is-max-desktop">
+
+            <!-- Overview-->
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Overview</h2>
+                    <div class="content has-text-justified">
+                        <figure> 
+                            <img src = "Approach.png"> 
+                            <figcaption> Our overall model to detect hand flapping, an indicator of autism, in videos. </figcaption>
+                        </figure>   
+                        <p> Our objective was to be able to create a model that could reliably detect hand flapping, an indicator of autism, in videos that then could be applied 
+                            to apps to help create a remote autism diagnosis. We do this by going frame (an image) by frame in a given video, and detecting the 
+                            numerical coordinates of the hand's landmarks in the images. These coordinates are fed overtime into a Long Term Short-Term Memory (LSTM) model. The output
+                            at the last time step of the LSTM model is fed into a fully-connected layer to get the prediction on whether hand flapping was detected (1) or not (0). A visual diagram 
+                            of our approach is shown above. Our best model uses less than 26,000 parameters, so it can easily be deployed into any app.</p> 
+                    </div>
+                </div>
+            </div>
+
             <!-- Abstract. -->
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Abstract</h2>
-                    <div class="content has-text-justified"> 
-                        <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait months orlonger before
-                                receiving a diagnosis for their child. One approach to lessen delays is the use digitaltechnologies to detect
-                                the presence of behaviors indicative of autism, which in aggregate may leadto remote and automated diagnostics.
-                                One of the strongest indicators of autism is stimming, whichincludes repetitive, self-stimulatory behaviors such
-                                as hand flapping, headbanging, and spinning.Using computer vision to detect hand flapping is especially
-                                difficult due to the sparsity of publictraining data in this space and excessive shakiness and motion in such
-                                data. Our work demonstratesa novel method that may overcome these issues: we use hand landmark detection over
-                                time as afeature representation which is then fed into a Long Short-Term Memory (LSTM) model. We achieve
-                                avalidation accuracy and F1 Score of about 72% on detecting whether videos from the Self-StimulatoryBehaviour
-                                Dataset (SSBD) contain hand flapping or not. Our best model also predicts accurately onexternal videos we
-                                recorded of ourselves outside of the dataset it was trained on. This model usesless than 26,000 parameters,
-                                providing promise for fast deployment into ubiquitous and wearabledigital settings for a remote autism
+                    <div class="content has-text-justified">
+                        <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait
+                                months orlonger before
+                                receiving a diagnosis for their child. One approach to lessen delays is the use
+                                digitaltechnologies to detect
+                                the presence of behaviors indicative of autism, which in aggregate may leadto remote and
+                                automated diagnostics.
+                                One of the strongest indicators of autism is stimming, whichincludes repetitive,
+                                self-stimulatory behaviors such
+                                as hand flapping, headbanging, and spinning.Using computer vision to detect hand
+                                flapping is especially
+                                difficult due to the sparsity of publictraining data in this space and excessive
+                                shakiness and motion in such
+                                data. Our work demonstratesa novel method that may overcome these issues: we use hand
+                                landmark detection over
+                                time as afeature representation which is then fed into a Long Short-Term Memory (LSTM)
+                                model. We achieve
+                                avalidation accuracy and F1 Score of about 72% on detecting whether videos from the
+                                Self-StimulatoryBehaviour
+                                Dataset (SSBD) contain hand flapping or not. Our best model also predicts accurately
+                                onexternal videos we
+                                recorded of ourselves outside of the dataset it was trained on. This model usesless than
+                                26,000 parameters,
+                                providing promise for fast deployment into ubiquitous and wearabledigital settings for a
+                                remote autism
                                 diagnosis. </em> </p>
                     </div>
                 </div>
             </div>
-            <!--/ Abstract. -->
 
-            <!-- Paper video. 
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Video</h2>
-                    <div class="publication-video">
-                        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
-                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        
+            <section class="section">
+                <div class="container-fluid">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-two-thirds">
+                            <h2 class="title is-2">Paper</h2>
+                            <div class="content has-text-justified">
+            
+                                <embed src="https://arxiv.org/pdf/2108.07917.pdf" width="100%" height='700px' />
+            
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        --> 
+            </section>
 
 
-        </div>
-    </section>
+            <section class="section" id="BibTeX">
+                <div class="container is-max-desktop content">
+                    <h2 class="title">Citation</h2>
+                    <pre> <code> 
+                        @article{lakkapragada2021activity,
+                        title={Activity Recognition for Autism Diagnosis},
+                        author={Lakkapragada, Anish and Washington, Peter and Wall, Dennis},
+                        journal={arXiv preprint arXiv:2108.07917},
+                        year={2021}
+                        }
+                    </code> </pre>
+                </div>
+            </section>
 
 
-    <section class="section">
-        <div class="container is-max-desktop"></div>
-    </section>
-
-
-    <section class="section" id="BibTeX">
-        <div class="container is-max-desktop content">
-            <h2 class="title">BibTeX</h2>
-            <pre><code>@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-        </div>
-    </section>
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <a class="icon-link" href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
-                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <div class="columns is-centered">
-                <div class="column is-8">
-                    <div class="content">
-                        <p>
-                            This website is licensed under a <a rel="license"
-                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                                Commons Attribution-ShareAlike 4.0 International License</a>.
-                        </p>
-                        <p>
-                            This means you are free to borrow the <a
-                                href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-                            we just ask that you link back to this page in the footer.
-                            Please remember to remove the analytics code included in the header of the website which
-                            you do not want on your website.
-                        </p>
+            <footer class="footer">
+                <div class="container">
+                    <div class="content has-text-centered">
+                        <a class="icon-link" href="static/paper.pdf">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                        <a class="icon-link" href="https://github.com/ayaanzhaque" class="external-link" disabled>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column is-8">
+                            <div class="content">
+                                <p>
+                                    This website template was used from <a
+                                        href="https://github.com/nerfies/nerfies.github.io">here</a>.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
-    </footer>
-
+    </section>
 </body>
 
 </html>

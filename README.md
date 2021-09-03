@@ -127,6 +127,7 @@ The <code>ensemble_code</code> folder contains the notebooks in which we tried t
 ## Citations
 Please cite the following:
 ```
+
 @article{lakkapragada2021activity,
   title={Activity Recognition for Autism Diagnosis},
   author={Lakkapragada, Anish and Washington, Peter and Wall, Dennis},
