@@ -127,12 +127,10 @@ The <code>ensemble_code</code> folder contains the notebooks in which we tried t
 ## Citations
 Please cite the following:
 ```
-@InProceedings{Nishi_2021_CVPR,
-    author    = {Nishi, Kento and Ding, Yi and Rich, Alex and {H{\"o}llerer, Tobias},
-    title     = {Augmentation Strategies for Learning With Noisy Labels},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {8022-8031}
+@article{lakkapragada2021activity,
+  title={Activity Recognition for Autism Diagnosis},
+  author={Lakkapragada, Anish and Washington, Peter and Wall, Dennis},
+  journal={arXiv preprint arXiv:2108.07917},
+  year={2021}
 }
 ```
