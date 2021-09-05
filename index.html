@@ -200,15 +200,21 @@
                 <div class="column is-four-fifths">
                     <h2 class="title is-3">Overview</h2>
                     <div class="content has-text-justified">
-                        <figure> 
-                            <img src = "Approach.png"> 
-                            <figcaption> Our overall model to detect hand flapping, an indicator of autism, in videos. </figcaption>
-                        </figure>   
-                        <p> Our objective was to be able to create a model that could reliably detect hand flapping, an indicator of autism, in videos that then could be applied 
-                            to apps to help create a remote autism diagnosis. We do this by going frame (an image) by frame in a given video, and detecting the 
-                            numerical coordinates of the hand's landmarks in the images. These coordinates are fed overtime into a Long Term Short-Term Memory (LSTM) model. The output
-                            at the last time step of the LSTM model is fed into a fully-connected layer to get the prediction on whether hand flapping was detected (1) or not (0). A visual diagram 
-                            of our approach is shown above. Our best model uses less than 26,000 parameters, so it can easily be deployed into any app.</p> 
+                        <figure>
+                            <img src="Approach.png">
+                            <figcaption> Our overall model to detect hand flapping, an indicator of autism, in videos.
+                            </figcaption>
+                        </figure>
+                        <p> Our objective was to be able to create a model that could reliably detect hand flapping, an
+                            indicator of autism, in videos that then could be applied
+                            to apps to help create a remote autism diagnosis. We do this by going frame (an image) by
+                            frame in a given video, and detecting the
+                            numerical coordinates of the hand's landmarks in the images. These coordinates are fed
+                            overtime into a Long Term Short-Term Memory (LSTM) model. The output
+                            at the last time step of the LSTM model is fed into a fully-connected layer to get the
+                            prediction on whether hand flapping was detected (1) or not (0). A visual diagram
+                            of our approach is shown above. Our best model uses less than 26,000 parameters, so it can
+                            easily be deployed into any app.</p>
                     </div>
                 </div>
             </div>
@@ -219,45 +225,36 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait
-                                months orlonger before
-                                receiving a diagnosis for their child. One approach to lessen delays is the use
-                                digitaltechnologies to detect
-                                the presence of behaviors indicative of autism, which in aggregate may leadto remote and
-                                automated diagnostics.
-                                One of the strongest indicators of autism is stimming, whichincludes repetitive,
-                                self-stimulatory behaviors such
-                                as hand flapping, headbanging, and spinning.Using computer vision to detect hand
-                                flapping is especially
-                                difficult due to the sparsity of publictraining data in this space and excessive
-                                shakiness and motion in such
-                                data. Our work demonstratesa novel method that may overcome these issues: we use hand
-                                landmark detection over
-                                time as afeature representation which is then fed into a Long Short-Term Memory (LSTM)
-                                model. We achieve
-                                avalidation accuracy and F1 Score of about 72% on detecting whether videos from the
-                                Self-StimulatoryBehaviour
-                                Dataset (SSBD) contain hand flapping or not. Our best model also predicts accurately
-                                onexternal videos we
-                                recorded of ourselves outside of the dataset it was trained on. This model usesless than
-                                26,000 parameters,
-                                providing promise for fast deployment into ubiquitous and wearabledigital settings for a
-                                remote autism
-                                diagnosis. </em> </p>
+                                months or longer before receiving a diagnosis for their child. One approach to lessen
+                                delays is the use digital totechnologies to detect the presence of behaviors indicative
+                                of autism, which in aggregate may lead to remote and automated diagnostics. One of the
+                                strongest indicators of autism is stimming, which includes repetitive, self-stimulatory
+                                behaviors such as hand flapping, headbanging, and spinning. Using computer vision to
+                                detect hand flapping is especially difficult due to the sparsity of public training data
+                                in this space and excessive shakiness and motion in such data. Our work demonstrates a
+                                novel method that may overcome these issues: we use hand landmark detection over time as
+                                a feature representation which is then fed into a Long Short-Term Memory (LSTM) model.
+                                We achieve a validation accuracy and F1 Score of about 72% on detecting whether videos
+                                from the Self-Stimulatory Behaviour Dataset (SSBD) contain hand flapping or not. Our
+                                best model also predicts accurately on external videos we recorded of ourselves outside
+                                of the dataset it was trained on. This model uses less than 26,000 parameters, providing
+                                promise for fast deployment into ubiquitous and wearable digital settings for a remote
+                                autism diagnosis. </em> </p>
                     </div>
                 </div>
             </div>
 
 
-        
+
             <section class="section">
                 <div class="container-fluid">
                     <div class="columns is-centered has-text-centered">
                         <div class="column is-two-thirds">
                             <h2 class="title is-2">Paper</h2>
                             <div class="content has-text-justified">
-            
+
                                 <embed src="https://arxiv.org/pdf/2108.07917.pdf" width="100%" height='700px' />
-            
+
                             </div>
                         </div>
                     </div>
