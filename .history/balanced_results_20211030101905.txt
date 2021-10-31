@@ -1,0 +1,8 @@
+training accuracy : 0.744 ± 0.057
+training precision : 0.757 ± 0.071
+training recall : 0.731 ± 0.087
+validation accuracy : 0.708 ± 0.123
+validation precision : 0.714 ± 0.141
+validation recall : 0.717 ± 0.154
+training F1 : 0.74 ± 0.059
+validation F1 : 0.708 ± 0.129
