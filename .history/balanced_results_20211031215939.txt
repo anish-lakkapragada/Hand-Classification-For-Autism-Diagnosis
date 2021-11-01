@@ -1,0 +1,17 @@
+====== WITH AUGMENTATION ======= 
+
+training accuracy : 0.76 ± 0.04
+training precision : 0.784 ± 0.054
+training recall : 0.728 ± 0.087
+validation accuracy : 0.71 ± 0.053
+validation precision : 0.738 ± 0.083
+validation recall : 0.678 ± 0.135
+training F1 : 0.75 ± 0.056
+validation F1 : 0.694 ± 0.079
+
+
+(0.7594000000000001, 0.016928727600792032)
+
+
+===== WITHOUT AUGMENTATION ======
+
