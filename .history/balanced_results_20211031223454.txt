@@ -33,15 +33,6 @@ validation F1 : 0.665 ± 0.115
 - the best thing for our research would be ____
     - add more videos that we recorded of ourselves.
     
-- manually create the folds, instead of randomly trying seeds. 
+- manually create the stuff
     - see what videos are actually used 
-    - then create the folds, figure out which videos to place where, etc. 
-    - you could probably create like a decent fold with some manual preprocessing 
-
-- okay we could manaully choose the seeds to use 
-- the seeds we could use are like 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
-- this would work well honestly only except
-
-- okay heere's what we do we run the stuff for seed 10, 20, 30, 40, 50, 60, 70, 80, 90 
-- then we evaluate it 
-- then for plots what we do is we manually take the plot of AUROC, etc. 
+    - then create the folds, figure out which videos to place where,e tc. 

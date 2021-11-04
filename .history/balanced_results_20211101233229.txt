@@ -42,6 +42,4 @@ validation F1 : 0.665 ± 0.115
 - the seeds we could use are like 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 - this would work well honestly only except
 
-- okay heere's what we do we run the stuff for seed 10, 20, 30, 40, 50, 60, 70, 80, 90 
-- then we evaluate it 
-- then for plots what we do is we manually take the plot of AUROC, etc. 
+- we would have to be prepared tho honestly with it 

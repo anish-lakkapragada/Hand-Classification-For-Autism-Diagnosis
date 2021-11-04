@@ -45,3 +45,6 @@ validation F1 : 0.665 ± 0.115
 - okay heere's what we do we run the stuff for seed 10, 20, 30, 40, 50, 60, 70, 80, 90 
 - then we evaluate it 
 - then for plots what we do is we manually take the plot of AUROC, etc. 
+
+
+- okay tehn for other things we do-umm honeslty for teh GAN gainiing the
