@@ -1,4 +1,9 @@
-Accuracy: 0.95
-Precision: 1.0
-Recall: 0.9
-F1: 0.9473684210526316
+Training Accuracy: 0.9125000238418579
+Training Precision: 0.9714285731315613
+Training Recall: 0.8500000238418579
+Training F1: 0.9066666311940061
+Validation Accuracy: 0.9
+Validation Precision: 0.9
+Validation Recall: 0.9
+Validation F1: 0.9
+AUROC: 0.9
