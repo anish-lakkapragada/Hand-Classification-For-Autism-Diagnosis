@@ -3,6 +3,10 @@
 
 <p>Code for <strong>Activity Recognition for Autism Detection</strong>.</p>
 <p><strong><a href="mailto:anish.lakkapragada@gmail.com,peter100@stanford.edu,dpwall@stanford.edu">Authors</a></strong>: <a href="mailto:anish.lakkapragada@gmail.com">Anish Lakkapragada</a>, <a href="mailto:peter100@stanford.edu">Peter Washington</a>, <a href="mailto:dpwall@stanford.edu">Dennis P. Wall</a></p>
+
+
+# Currently in consideration 
+
 <details>
    <summary>Abstract</summary>
    <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait months or longer before receiving a diagnosis for their child. One approach to lessen delays is the use digital to technologies to detect the presence of behaviors indicative of autism, which in aggregate may lead to remote and automated diagnostics. One of the strongest indicators of autism is stimming, which includes repetitive, self-stimulatory behaviors such as hand flapping, headbanging, and spinning. Using computer vision to detect hand flapping is especially difficult due to the sparsity of public training data in this space and excessive shakiness and motion in such data. Our work demonstrates a novel method that may overcome these issues:  we use hand landmark detection over time as a feature representation which is then fed into a Long Short-Term Memory (LSTM) model. We achieve a validation accuracy and F1 Score of about 72% on detecting whether videos from the Self-Stimulatory Behaviour Dataset (SSBD) contain hand flapping or not. Our best model also predicts accurately on external videos we recorded of ourselves outside of the dataset it was trained on. This model uses less than 26,000 parameters, providing promise for fast deployment into ubiquitous and wearable digital settings for a remote autism diagnosis. </em> </p>
