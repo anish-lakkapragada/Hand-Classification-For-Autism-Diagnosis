@@ -5,7 +5,7 @@
 <p><strong><a href="mailto:anish.lakkapragada@gmail.com,peter100@stanford.edu,dpwall@stanford.edu">Authors</a></strong>: <a href="mailto:anish.lakkapragada@gmail.com">Anish Lakkapragada</a>, <a href="mailto:peter100@stanford.edu">Peter Washington</a>, <a href="mailto:dpwall@stanford.edu">Dennis P. Wall</a></p>
 
 
-# Currently in consideration at journal
+# Accepted at JMIR Biomedical Engineering
 
 <details>
    <summary>Abstract</summary>
