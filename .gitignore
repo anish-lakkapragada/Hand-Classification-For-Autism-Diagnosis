@@ -4,3 +4,5 @@ ssbd-release/
 .ipynb_checkpoints/
 *.mov
 papers/*
+*.DS_Store
+*.h5
