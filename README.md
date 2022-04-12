@@ -1,4 +1,4 @@
-# Activity Recognition for Autism Diagnosis
+# Code for <em>Classification of Abnormal Hand Movement for Aiding in Hand Detection</em>
 
 
 <p>Code for <strong> Classification of Abnormal Hand Movement for Aiding in Autism Detection</strong>.</p>
