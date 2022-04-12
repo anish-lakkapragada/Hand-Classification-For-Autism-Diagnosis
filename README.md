@@ -1,4 +1,4 @@
-# Code for [Classification of Abnormal Hand Movement for Aiding in Hand Detection](https://arxiv.org/abs/2108.07917)
+# Code for [Classification of Abnormal Hand Movement for Aiding in Autism Detection](https://arxiv.org/abs/2108.07917)
 
 
 <p>Code for <strong> Classification of Abnormal Hand Movement for Aiding in Autism Detection</strong>.</p>
