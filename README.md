@@ -1,7 +1,5 @@
-# Code for [Classification of Abnormal Hand Movement for Aiding in Autism Detection](https://arxiv.org/abs/2108.07917)
+# Code for [Classification of Hand Movement for Autism Detection](https://arxiv.org/abs/2108.07917)
 
-
-<p>Code for <strong> Classification of Abnormal Hand Movement for Aiding in Autism Detection</strong>.</p>
 
 <p><strong><a href="mailto:anish.lakkapragada@gmail.com,peter100@stanford.edu,dpwall@stanford.edu">Authors</a></strong>: <a href="mailto:anish.lakkapragada@gmail.com">Anish Lakkapragada</a>, <a href="mailto:peter100@stanford.edu">Peter Washington</a>, <a href="mailto:dpwall@stanford.edu">Dennis P. Wall</a></p>
 
