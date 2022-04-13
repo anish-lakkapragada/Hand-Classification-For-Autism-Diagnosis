@@ -1,59 +1,34 @@
-# Activity Recognition for Autism Diagnosis
+
+# Code for [Classification of Hand Movement for Autism Detection](https://arxiv.org/abs/2108.07917)
 
 
-<p>Code for <strong> Classification of Abnormal Hand Movement for Aiding in Autism Detection</strong>.</p>
-<p><strong><a href="mailto:anish.lakkapragada@gmail.com,peter100@stanford.edu,dpwall@stanford.edu">Authors</a></strong>: <a href="mailto:anish.lakkapragada@gmail.com">Anish Lakkapragada</a>, <a href="mailto:peter100@stanford.edu">Peter Washington</a>, <a href="mailto:dpwall@stanford.edu">Dennis P. Wall</a></p>
+<h1> Recognition </h1> 
 
-# Accepted at JMIR Biomedical Engineering finally
+Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Data + AI Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
 
 <details>
    <summary>Abstract</summary>
-   <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait months or longer before receiving a diagnosis for their child. One approach to lessen delays is the use digital to technologies to detect the presence of behaviors indicative of autism, which in aggregate may lead to remote and automated diagnostics. One of the strongest indicators of autism is stimming, which includes repetitive, self-stimulatory behaviors such as hand flapping, headbanging, and spinning. Using computer vision to detect hand flapping is especially difficult due to the sparsity of public training data in this space and excessive shakiness and motion in such data. Our work demonstrates a novel method that may overcome these issues:  we use hand landmark detection over time as a feature representation which is then fed into a Long Short-Term Memory (LSTM) model. We achieve a validation accuracy and F1 Score of about 72% on detecting whether videos from the Self-Stimulatory Behaviour Dataset (SSBD) contain hand flapping or not. Our best model also predicts accurately on external videos we recorded of ourselves outside of the dataset it was trained on. This model uses less than 26,000 parameters, providing promise for fast deployment into ubiquitous and wearable digital settings for a remote autism diagnosis. </em> </p>
+   <p> <em> A formal autism diagnosis can be an inefficient and lengthy process. Families may wait months or longer before receiving a diagnosis for their child despite evidence that earlier intervention leads to better treatment outcomes. Digital technologies which detect the presence of behaviors related to autism can scale access to pediatric diagnoses. This work aims to demonstrate the feasibility of deep learning technologies for detecting hand flapping from unstructured home videos as a first step towards validating whether models and digital technologies can be leveraged to aid with autism diagnoses. We used the Self-Stimulatory Behavior Dataset (SSBD), which contains 75 videos of hand flapping, head banging, and spinning exhibited by children. From all the hand flapping videos, we extracted 100 positive and control videos of hand flapping, each between 2 to 5 seconds in duration. Utilizing both landmark-driven-approaches and MobileNet V2's pretrained convolutional layers, our highest performing model achieved a testing F1 score of 84% (90% precision and 80% recall) when evaluating with 5-fold cross validation 100 times. This work provides the first step towards developing precise deep learning methods for activity detection of autism-related behaviors. </em> </p>
 </details>
-<h2 id="objective">Objective</h2>
-<p>Today&#39;s autism diagnosis is a quite lengthy and inefficient process. Families often have to wait a few years before receiving a diagnosis, and this problem is exacerbated by the fact that the earliest possible intervention is required for best clinical outcomes. One of the biggest indicators of autism is self-stimulatory, or stimming, behaviors such as hand flapping, headbanging, and spinning. In this paper, we demonstrate successful lightweight detection of hand flapping in videos using deep learning and activity recognition. We believe such methods will help create a remote, fast, and accessible autism diagnosis. </p>
-<h2 id="data">Data</h2>
-<p>In order to collect the videos, we use the <a href="https://rolandgoecke.net/research/datasets/ssbd/">Self-Stimulatory Behavior Dataset (SSBD)</a> which contains 75 videos of hand flapping, head banging, and spinning behavior. We extract 100 hand flapping and control 2-3 second videos from this dataset and use it 
-   to train our model. Because most of the videos in SSBD are children, we wanted to see whether a model we built could generalize past age (and hand shape), so we recorded 3 positive and 3 control videos of ourselves to test our model against. 
-</p>
-<p>Our entire dataset can be found in a google drive folder <a href="https://tinyurl.com/47fya6">here</a>.</p>
-<h2 id="approach">Approach</h2>
-<p>In this space, one way to detect hand flapping in videos that has been done before is to use pose estimation images and feed them into time-series based 
-   Recurrent Neural Networks (RNNs). However because these approaches use heavier feature representations, they demand heavier models; this is not ideal for creating models to deploy into mobile phones, etc. We decide to use a much lighter feature representation and model by using landmark detection to find the
-   coordinates of the detected hand landmarks as a feature representation over time which is then fed into a Long-Short Term Memory (LSTM) network. 
-</p>
-<p><img src = "docs/mediapipe_landmarks.png"></p>
-<p>The above image shows the 21 landmarks that Mediapipe, a landmark detection framework made by Google, recognizes on the hands. We take the first 90 frames of a video, and at each frame,  take the detected <em> (x, y, z) </em> coordinates of a set amount of landmarks and concatenate them to become a &quot;location frame&quot;. Note that the location frame is always 6x bigger than the set amount of landmarks, because there are 3 coordinates for a given landmark and 2 hands where that landmark can be found. If a landmark is not detected, we set all of its <em> (x, y, z) </em> coordinates to 0. This location vector for every frame is fed into an LSTM network that then gives us our prediction. We train models with and without augmentation and compare their results. Our overall approach is shown in the below image. </p>
-<p><img src = "docs/Approach.png"></p>
-<p>It is easy to see that this kind of feature representation and model architecture would easily fit into a model device even unoptimized. Our heaviest model uses &lt;50,000 parameters. </p>
-<h2 id="approaches">Approaches</h2>
-<p>We tried multiple approaches to create the best model. Our first approach was the most simple - we just used all the 21 landmarks MediaPipe detects to create the location frames. However, we wondered whether this would make the model overfit to the small hands present in the dataset. So to eliminate hand shape, we tried a one landmark approach where we only used the 0th landmark in the location frames. Because of the shakiness in the videos of our dataset, we decided it may not be wise to depend on only one landmark, so we tried a "mean landmark" approach where we took the mean of the <em> (x, y, z) </em> coordinates of all detected landmarks for each frame. This mean coordinate of all detected coordinates would be used frame by frame in this approach. The last approach was to use six landmarks found on the edge of the hands, numbered 0, 4, 8, 12, 16, and 20. </p>
-<h2 id="results">Results</h2>
-<p>We found that the best results on our recorded videos and on our dataset came from using the six landmarks approach. Explanations for why this happened are described in the Discussion section of our paper. This approach almost always predicted correctly on our self-recorded videos and got a good, consistent accuracy on our dataset. It&#39;s (validation) accuracy, precision, recall, F1 Score, and AUROC over 10 runs are shown below.</p>
 
-<table style = "table-layout:fixed">
-   <thead>
-      <tr>
-         <th>Accuracy</th>
-         <th>Precision</th>
-         <th>Recall</th>
-         <th>F1 Score</th>
-         <th>AUROC</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td style = "position:absolute"><div class = "hide"> 71.9 ± 1.7</div></td>
-         <td style = "position:absolute"><div class = "hide"> 70.8 ± 1.85</div></td>
-         <td style = "position:absolute"><div class = "hide"> 74.5 ± 4.04</div></td>
-         <td style = "position:absolute"><div class = "hide"> 71.9 ± 2.25</div></td>
-         <td style = "position:absolute"><div class = "hide"> 0.77 ± 0.03</div></td>
-      </tr>
-   </tbody>
-</table>
-<details>
-   <summary> All Results </summary>
-   <p> If you are interested, we show the results of all the approaches we tried (trained without augmentation) below. </p>
+<h1> Summary </h1> 
+
+<h2> Objective </h2> 
+
+Detect autism-related behavior from a hundred crowdsourced videos of the <a href="https://rolandgoecke.net/research/datasets/ssbd/">Self-Stimulatory Behavior Dataset (SSBD)</a> using machine learning models. 
+
+<h2> Evaluation Method </h2> 
+
+All our results are the average of a 100 K-fold (<em> k </em>  = 5) cross validation evaluations on 100 different arrangements of the data (essentially training and evaluation on 500 different datasets). We track the accuracy, precision, recall, and F1 score. 
+
+<h2> Results </h2> 
+
+   <details>
+      <summary> Method Explanation </summary>
+      <p> If interested, we detail all our approaches. 
+      For each frame in a given video, we feed it through a feature extractor. The goal of the feature extractor is to map the high dimensional image into a compact vector presentation for each timestep in the LSTM network. <br> <br> 
+      We try using MediaPipe's hand landmark detection model to get the numerical coordinates of the hands in each frame (which are then fed to the LSTM) as the feature extractor. MediaPipe by default detects the <em> (x, y, z) </em> coordinates of 21 landmarks on the hand. We explore using subsets (e.g. using six of the landmarks or only one) provided by MediaPipe in the vector representation fed into the LSTM. We also try a "mean landmark" approach where we insert the mean of all the detected landmarks' coordinates. <br> <br> Another approach we tried was to take MobileNet V2's convolutional layers, pretrained on ImageNet, and use those as our feature extractor to convert each frame into a compact vector. </p>
+   </details>
    <table>
       <thead>
          <tr>
@@ -63,53 +38,53 @@
             <th>Recall</th>
             <th>F1</th>
             <th>AUROC</th>
-            <th>Videos</th>
          </tr>
       </thead>
       <tbody>
          <tr>
-            <td style = "position:absolute"><div class = "hide"> All Landmarks</div></td>
-            <td style = "position:absolute"><div class = "hide"> 72.4 ± 0.8</div></td>
-            <td style = "position:absolute"><div class = "hide">69.7 ± 0.99</div></td>
-            <td style = "position:absolute"><div class = "hide">82.9 ± 0.94</div></td>
-            <td style = "position:absolute"><div class = "hide"> 75.15 ± 0.57</div></td>
-            <td style = "position:absolute"><div class = "hide"> 0.75 ± 0.02</div></td>
-            <td style = "position:absolute"><div class = "hide"> 🤮</div></td>
+            <td> All Landmarks</div></td>
+            <td> 68.0 ± 2.66 </td> 
+		   <td> 70.3 ± 3.6 </td> 
+		   <td> 65.34 ± 5.0 </td> 
+		   <td> 66.6 ± 3.35 </td> 
+		   <td> 0.748 ± 0.26 </td>     
+    </tr>
+         <tr>
+            <td>  Mean Landmark </div></td>
+            <td> 65.5 ± 4.5 </td> 
+		   <td> 66.7 ±  7.4 </td> 
+		   <td> 66.9 ± 9.6  </td> 
+		   <td> 64.2 ± 6.8 </td> 
+		   <td> 0.73 ± 0.04 </td>     
          </tr>
          <tr>
-            <td style = "position:absolute"><div class = "hide">Mean Landmark</div></td>
-            <td style = "position:absolute"><div class = "hide">69.8 ± 4.04</div></td>
-            <td style = "position:absolute"><div class = "hide"> 69.18 ± 5.05</div></td>
-            <td style = "position:absolute"><div class = "hide">69.8 ± 6.56</div></td>
-            <td style = "position:absolute"><div class = "hide"> 67.86 ± 3.52</div></td>
-            <td style = "position:absolute"><div class = "hide"> 0.75 ± 0.02</div></td>
-            <td style = "position:absolute"><div class = "hide"> 😐</div></td>
+	            <td>  One Landmark </div></td>
+	            <td> 65.8 ± 4.3 </td> 
+			   <td> 66.5 ±  7.5 </td> 
+			   <td> 68.0 ± 6.7  </td> 
+			   <td> 64.9 ± 6.5 </td> 
+			   <td> 0.751 ± 0.03 </td>
          </tr>
          <tr>
-            <span>
-            <td style = "position:absolute"><div class = "hide"> One Landmark</div></td>
-            <td style = "position:absolute"><div class = "hide"> 73.9 ± 2.77</div></td>
-            <td style = "position:absolute"><div class = "hide"> 75.29 ± 1.72</div></td>
-            <td style = "position:absolute"><div class = "hide"> 73.1 ± 5.09</div></td>
-            <td style = "position:absolute"><div class = "hide"> 72.6 ± 2.30</div></td>
-            <td style = "position:absolute"><div class = "hide"> 0.77 ± 0.02</div></td>
-            <td style = "position:absolute"><div class = "hide"> 👍</div></td>
-            </span>
+	            <td>  Six Landmarks </div></td>
+	            <td> 69.55 ± 2.7 </td> 
+			   <td> 71.7 ±  3.5 </td> 
+			   <td> 67.5 ± 5.5  </td> 
+			   <td> 68.3 ± 3.6 </td> 
+			   <td> 0.76 ± 0.027 </td>
          </tr>
          <tr>
-            <td style = "position:absolute"><div class = "hide">Six Landmarks</div></td>
-            <td style = "position:absolute"><div class = "hide"> 71.9 ± 1.7</div></td>
-            <td style = "position:absolute"><div class = "hide"> 70.8 ± 1.85</div></td>
-            <td style = "position:absolute"><div class = "hide"> 74.5 ± 4.04</div></td>
-            <td style = "position:absolute"><div class = "hide"> 71.9 ± 2.25</div></td>
-            <td style = "position:absolute"><div class = "hide"> 0.77 ± 0.03</div></td>
-            <td style = "position:absolute"><div class = "hide"> 🔥</div></td>
-         </tr>
+         	   <td> <strong> MobileNet V2 </strong> </td>
+			   <td> <strong> 85.0 ± 3.14 </strong> </td> 
+			   <td> <strong> 89.6 ±  4.3 </strong> </td> 
+			   <td> <strong> 80.4 ± 6.0 </strong>  </td> 
+			   <td> <strong> 84.0 ± 3.7 </strong> </td> 
+			   <td> <strong> 0.85 ± 0.03 </strong> </td>
+		</tr>
       </tbody>
    </table>
-</details>
-<h2 id="code">Code</h2>
-<p> 
+
+<h2> Code </h2> 
 
 Here we would like to describe the source code we used for our project. 
 
@@ -128,6 +103,7 @@ The <code>ensemble_code</code> folder contains the notebooks in which we tried t
 </p>
 
 ## Citations
+
 Please cite the following:
 ```
 
