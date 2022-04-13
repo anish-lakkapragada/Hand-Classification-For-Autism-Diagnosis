@@ -4,7 +4,7 @@
 
 <h1> Recognition </h1> 
 
-Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Data + AI Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
+Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
 
 <details>
    <summary>Abstract</summary>
