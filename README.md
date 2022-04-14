@@ -96,10 +96,9 @@ All our results are the average of a 100 K-fold (<em>k </em>  = 5) cross validat
 
 Please cite the following:
 ```
-
-@article{lakkapragada2021activity,
-  title={Activity Recognition for Autism Diagnosis},
-  author={Lakkapragada, Anish and Washington, Peter and Wall, Dennis},
+@article{lakkapragada2021classification,
+  title={Classification of Abnormal Hand Movement for Aiding in Autism Detection: Machine Learning Study},
+  author={Lakkapragada, Anish and Kline, Aaron and Mutlu, Onur Cezmi and Paskov, Kelley and Chrisman, Brianna and Stockham, Nate and Washington, Peter and Wall, Dennis},
   journal={arXiv preprint arXiv:2108.07917},
   year={2021}
 }
