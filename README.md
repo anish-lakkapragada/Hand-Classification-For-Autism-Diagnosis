@@ -4,7 +4,7 @@
 
 <h1> Recognition </h1> 
 
-Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Data + AI Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
+Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
 
 <details>
    <summary>Abstract</summary>
@@ -19,7 +19,7 @@ Detect autism-related behavior from a hundred crowdsourced videos of the <a href
 
 <h2> Evaluation Method </h2> 
 
-All our results are the average of a 100 K-fold (<em> k </em>  = 5) cross validation evaluations on 100 different arrangements of the data (essentially training and evaluation on 500 different datasets). We track the accuracy, precision, recall, and F1 score. 
+All our results are the average of a 100 K-fold (<em>k </em>  = 5) cross validation evaluations on 100 different arrangements of the data (essentially training and evaluation on 500 different datasets). We track the accuracy, precision, recall, and F1 score. 
 
 <h2> Results </h2> 
 
