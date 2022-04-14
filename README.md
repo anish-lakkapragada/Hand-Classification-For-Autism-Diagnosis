@@ -86,20 +86,10 @@ All our results are the average of a 100 K-fold (<em> k </em>  = 5) cross valida
 
 <h2> Code </h2> 
 
-Here we would like to describe the source code we used for our project. 
+<p>
+   We maintain all code here. A demo of our stored and trained MobileNet model is in the ```demo/``` directory. We store our notebooks that we used to evaluate our models in ```main-notebooks``` and their associated serialized results in ```main-results```. Our figures used in the paper are in ```plots/```. 
 
-For the four approaches we tried (all landmarks, one landmark, six landmarks, and mean landmark):
-- <code>all_landmark_detection.ipynb</code> contains the code for the all landmarks approach  
-- <code>mean_landmark_detection.ipynb</code> contains the code for the mean landmark approach 
-- <code>one_landmark_detection.ipynb</code> contains the code for the one landmark approach
-- <code>six_landmark_detection.ipynb</code> contains the code for the six landmarks approach 
-
-To avoid having to read the frames of each video every time we wanted to run these approaches, we stored the location frames of each video for each approach into 5 pickle files (for 5-fold cross validation) in the <code> all_points_folds </code>, 
-<code>mean_point_folds</code>, <code>one_point_folds</code>, and <code>six_point_folds</code> directories. These files are used in
-the <code>all_landmark_detection.ipynb</code>, <code>mean_landmark_detection.ipynb</code>, <code>one_landmark_detection.ipynb</code>, and <code>six_landmark_detection.ipynb</code> notebooks for cross-validation.
-
-The <code>ensemble_code</code> folder contains the notebooks in which we tried to use ensemble methods. This code is not guaranteed to work, but if you want to check it out it is there. 
-
+   ```misc/``` contains other methods we tried (e.g. our code for the ensemble classifier) which may or may not have been in the paper. ```misc/original-landmark-notebooks``` stores the original notebooks for the landmark code. 
 </p>
 
 ## Citations
