@@ -89,7 +89,7 @@ All our results are the average of a 100 K-fold (<em>k </em>  = 5) cross validat
 <p>
    We maintain all code here. A demo of our stored and trained MobileNet model is in the ```demo/``` directory. We store our notebooks that we used to evaluate our models in ```main-notebooks``` and their associated serialized results in ```main-results```. Our figures used in the paper are in ```plots/```. 
 
-   ```misc/``` contains other methods we tried (e.g. our code for the ensemble classifier) which may or may not have been in the paper. ```misc/original-landmark-notebooks``` stores the original notebooks for the landmark code. 
+   `misc/` contains other methods we tried (e.g. our code for the ensemble classifier) which may or may not have been in the paper. ```misc/original-landmark-notebooks``` stores the original notebooks for the landmark code. 
 </p>
 
 ## Citations
