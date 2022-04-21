@@ -15,7 +15,7 @@ Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.
 
 <h2> Objective </h2> 
 
-Detect autism-related behavior from a hundred crowdsourced videos of the <a href="https://rolandgoecke.net/research/datasets/ssbd/">Self-Stimulatory Behavior Dataset (SSBD)</a> using machine learning models. 
+Detect autism-related behavior from about a hundred crowdsourced videos of the <a href="https://rolandgoecke.net/research/datasets/ssbd/">Self-Stimulatory Behavior Dataset (SSBD)</a> using machine learning models. 
 
 <h2> Evaluation Method </h2> 
 
