@@ -4,7 +4,7 @@
 
 <h1> Recognition </h1> 
 
-Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
+Paper is published at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.org/) and to be presented at the [DataBricks Summit 2022](https://databricks.com/dataaisummit/north-america-2022). 
 
 <details>
    <summary>Abstract</summary>
@@ -15,7 +15,7 @@ Paper is pubilshed at [JMIR Biomedical Engineering 2022](https://biomedeng.jmir.
 
 <h2> Objective </h2> 
 
-Detect autism-related behavior from a hundred crowdsourced videos of the <a href="https://rolandgoecke.net/research/datasets/ssbd/">Self-Stimulatory Behavior Dataset (SSBD)</a> using machine learning models. 
+Detect autism-related behavior from about a hundred crowdsourced videos of the <a href="https://rolandgoecke.net/research/datasets/ssbd/">Self-Stimulatory Behavior Dataset (SSBD)</a> using machine learning models. 
 
 <h2> Evaluation Method </h2> 
 
