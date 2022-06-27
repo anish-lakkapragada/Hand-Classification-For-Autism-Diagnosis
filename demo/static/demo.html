@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DataBricks Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <script> 
@@ -16,8 +17,8 @@
     window.addEventListener("DOMContentLoaded", (event) => {
         let current_file_path = undefined; 
 
-        const submit_btn = document.getElementById("file-submit-btn"); 
-        const file_upload_btn = document.getElementById("myFile"); 
+        const submit_btn = document.getElementsByClassName("submit-btn")[0];
+        const file_upload_btn = document.getElementById("formFile"); 
         const h2_item = document.getElementById("output"); 
 
         file_upload_btn.addEventListener("input", (e) => {
@@ -45,6 +46,7 @@
                 video_display.play();
             }
         }); 
+        
 
         submit_btn.addEventListener("click", (e) => {
             e.preventDefault(); 
@@ -63,29 +65,28 @@
             });
         }); 
 
-
-        setInterval(() => {console.log(edit(current_file_path))}, 1000);
     }); 
 
 </script> 
 <body>
-    <h1> DataBricks Demo </h1>
-    <p> Simple Demo of the Model </p>
-
-    <!-- this sht needs to be styled-->
-    <form>
-        <input type="file" id="myFile" name="file">
-        <input type="submit" id="file-submit-btn"> 
-    </form>
-
-
-    <div id="video-container"> 
+    <div class="text-center mt-3">
+        <h1 id="title"> DataBricks Demo </h1>
+        <p id="description"> Simple Demo of the Model </p>
     </div>
 
-    <h2 id="output"> </h2>
+    <!-- bootstrap, file upload folder -->
+    <div class="upload-section d-flex justify-content-center">
+        <input class="form-control w-75" type="file" name="file" id="formFile"> <!-- file upload button -->
+        <button type="button" class="btn btn-primary submit-btn">Submit</button> <!-- submit button-->
+    </div>
+
+    <div id="video-container"> </div>
+    
+    <h2 id="output" class="text-center mt-3"> Prediction: None </h2>
 </body>
 
 <style> 
+
 
 </style> 
 </html>

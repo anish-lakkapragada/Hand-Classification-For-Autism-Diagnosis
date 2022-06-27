@@ -52,10 +52,10 @@ def predict():
     if not file_name.find(".mov") and not file_name.find(".mp4"): 
         return "Invalid File!"
 
-    time, (prediction_class, confidence) = predict_model(model, f"videos/{file_name}")
+    time, (prediction_class, confidence) = predict_model(model, f"static/videos/{file_name}")
     print(time, prediction_class, confidence)
-    return {"time": json.dumps(str(time)), "prediction": prediction_class, "confidence": json.dumps(str(confidence))}
+    return {"time": str(time), "prediction": prediction_class, "confidence": str(confidence)}
     
 
 if __name__ == "__main__": 
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=8000, host="localhost")
