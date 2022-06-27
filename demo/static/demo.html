@@ -31,11 +31,17 @@
                 // video_display.height = "400"; 
                 video_display.controls = "controls";
                 video_display.classList.add("video-display");
+                
+                for (style of ['mt-3', 'overflow-hidden', 'w-50']) {
+                    video_display.classList.add(style);
+                }
+
                 video_display.setAttribute('src', `../videos/${current_file_path}`);
                 video_display.autoplay = "autoplay";
 
                 document.getElementById("video-container").appendChild(video_display);
             }
+
 
             else {
             
@@ -77,16 +83,19 @@
     <!-- bootstrap, file upload folder -->
     <div class="upload-section d-flex justify-content-center">
         <input class="form-control w-75" type="file" name="file" id="formFile"> <!-- file upload button -->
-        <button type="button" class="btn btn-primary submit-btn">Submit</button> <!-- submit button-->
+        <button type="button" class="btn btn-primary submit-btn">Predict</button> <!-- submit button-->
     </div>
 
-    <div id="video-container"> </div>
+    <div id="video-container" class="text-center"> </div>
     
-    <h2 id="output" class="text-center mt-3"> Prediction: None </h2>
+    <h2 id="output" class="text-center mt-4"> Prediction: None </h2>
 </body>
 
 <style> 
 
+.video-display {
+    border-radius: 20px;
+}
 
 </style> 
 </html>
