@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script> 
+
+    function edit(file_path) {
+        return file_path.replace("C:\fakepath", "");
+    }
+
+    window.addEventListener("DOMContentLoaded", (event) => {
+        let current_file_path = undefined; 
+
+        const submit_btn = document.getElementById("file-submit-btn"); 
+        const file_upload_btn = document.getElementById("myFile"); 
+        const h2_item = document.getElementById("output"); 
+
+        file_upload_btn.addEventListener("input", (e) => {
+            current_file_path = file_upload_btn.files[0].name;
+            const hasAdded = document.getElementById("video-display") != undefined; 
+            if (!hasAdded) {
+                const video_display = document.createElement("video"); 
+                video_display.id = "video-display"; 
+                // video_display.width = "400"; 
+                // video_display.height = "400"; 
+                video_display.controls = "controls";
+                video_display.classList.add("video-display");
+                video_display.setAttribute('src', `../videos/${current_file_path}`);
+                video_display.autoplay = "autoplay";
+
+                document.getElementById("video-container").appendChild(video_display);
+            }
+
+            else {
+            
+                const video_display = document.getElementById("video-display"); 
+                video_display.pause();
+                video_display.setAttribute('src', `../videos/${current_file_path}`);
+                video_display.load();
+                video_display.play();
+            }
+        }); 
+
+        submit_btn.addEventListener("click", (e) => {
+            e.preventDefault(); 
+
+            fetch("/predict", {
+                method: "POST", 
+                headers: {
+                    "Content-Type": "application/json"
+                }, 
+                body: JSON.stringify({
+                    "file": edit(current_file_path)
+                })
+            }).then(resp => resp.json()).then(response => {
+                const {confidence, prediction, time} = response; 
+                h2_item.innerText = `Prediction: ${prediction} with confidence of ${confidence} in ${time} seconds.`;
+            });
+        }); 
+
+
+        setInterval(() => {console.log(edit(current_file_path))}, 1000);
+    }); 
+
+</script> 
+<body>
+    <h1> DataBricks Demo </h1>
+    <p> Simple Demo of the Model </p>
+
+    <!-- this sht needs to be styled-->
+    <form>
+        <input type="file" id="myFile" name="file">
+        <input type="submit" id="file-submit-btn"> 
+    </form>
+
+
+    <div id="video-container"> 
+    </div>
+
+    <h2 id="output"> </h2>
+</body>
+
+<style> 
+
+</style> 
+</html>
