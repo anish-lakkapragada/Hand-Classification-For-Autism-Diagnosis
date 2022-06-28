@@ -30,6 +30,7 @@ def predict_model(model, video):
     cur_time = time.time()
     prediction = model.predict(np.array([data_matrix]))
     pred_time = time.time() - cur_time
+    print(prediction)
     text_pred = "Hand Flapping" if prediction >= 0.5 else "No Hand Flapping"
     
     cap.release()
