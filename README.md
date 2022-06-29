@@ -19,7 +19,7 @@ Detect autism-related behavior from about a hundred crowdsourced videos of the <
 
 <h2> Evaluation Method </h2> 
 
-All our results are the average of a 100 K-fold (<em>k </em>  = 5) cross validation evaluations on 100 different arrangements of the data (essentially training and evaluation on 500 different datasets). We track the accuracy, precision, recall, and F1 score. 
+All our results are the average of a 100 K-fold (<em>k</em> = 5) cross validation evaluations on 100 different arrangements of the data (essentially training and evaluation on 500 different datasets). We track the training and testing precision, recall, and F1 score. 
 
 <h2> Results </h2> 
 
